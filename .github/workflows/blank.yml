@@ -29,3 +29,4 @@ jobs:
           echo "Evento: ${{github.event}}"
           echo "GitHub Actor: ${{github.actor}}"
           echo "GitHub Repository: $GITHUB_REPOSITORY"
+          
