@@ -18,7 +18,7 @@ jobs:
       - name: "Show message"
         run: echo "Hello world"
       - name: "Show env variables"
-        if: ${{env.paltform=='aws'}}
+        if: ${{env.paltform=='azure'}}
         run: |
           echo "Este es el valor de platform: ${{ env.paltform }}"
           echo "Este es el valor de region: ${{ env.region }}"
