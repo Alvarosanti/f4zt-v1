@@ -35,7 +35,7 @@ jobs:
           echo "GitHub Actor: ${{github.actor}}"
           echo "GitHub Repository: $GITHUB_REPOSITORY"
 
-      - name: "!Existe user"
-        if: ${{env.username == '' && env.password == ''}}
+      - name: "Existe user"
+        if: ${{env.username != '' && env.password != ''}}
         run: |
-          echo "No existe user"
+          echo "Existe user"
