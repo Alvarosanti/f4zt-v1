@@ -13,6 +13,8 @@ jobs:
       paltform: azure
       region: us-east-1
       account: 123123123
+      username: ${{secrets.USERNAME}}
+      password: $${{secrets.PASSWORD}}
 
     steps:
       - name: "Show message"
