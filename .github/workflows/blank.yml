@@ -17,6 +17,7 @@ jobs:
     steps:
       - name: "Show message"
         run: echo "Hello world"
+
       - name: "Show env variables"
         if: ${{env.paltform=='azure'}}
         run: |
@@ -24,8 +25,9 @@ jobs:
           echo "Este es el valor de region: ${{ env.region }}"
           echo "Este es el valor de account: ${{ env.account }}"
           echo "Este mensaje test"
+
       - name: "Mostrando variables por defecto"
         run: |
-          echo "Evento: ${{github.event}}"
+          echo "Evento: ${{toJSON(github.event)}}"
           echo "GitHub Actor: ${{github.actor}}"
           echo "GitHub Repository: $GITHUB_REPOSITORY"
