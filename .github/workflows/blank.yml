@@ -28,6 +28,7 @@ jobs:
           echo "Este es el valor de account: ${{ env.account }}"
           echo "Esto es un valor de username: ${{env.username}}"
           echo "Esto es un valor de password: ${{env.password}}"
+          echo "Project verision: ${{vars.PROJECT_VERSION}}"
 
       - name: "Mostrando variables por defecto"
         run: |
