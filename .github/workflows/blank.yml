@@ -26,7 +26,8 @@ jobs:
           echo "Este es el valor de platform: ${{ env.paltform }}"
           echo "Este es el valor de region: ${{ env.region }}"
           echo "Este es el valor de account: ${{ env.account }}"
-          echo "Este mensaje test"
+          echo "Esto es un valor de username: ${{env.username}}"
+          echo "Esto es un valor de password: ${{env.password}}"
 
       - name: "Mostrando variables por defecto"
         run: |
